@@ -3,3 +3,5 @@ termcapinfo rxvt* 'hs:ts=\E]2;:fs=\007:ds=\E]2;\007'
 hardstatus string "screen (%n: %t)"
 caption string "%{= kw}%Y-%m-%d;%c %{= kw}%-Lw%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+Lw%1`"
 caption always
+deflog on
+logfile $HOME/screenlog/%S-%n--%d-%M-%Y-%c.txt
