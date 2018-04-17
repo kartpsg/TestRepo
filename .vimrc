@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 "Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-"Plugin 'L9'
+" Plugin 'L9'
 " Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
@@ -25,7 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
-"Plugin 'ascenator/L9', {'name': 'newL9'}
+" Plugin 'ascenator/L9', {'name': 'newL9'}
 
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree.git'
@@ -54,17 +54,13 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-d> :qall<CR>
 map <C-J> :NERDTreeMapJumpNextSibling<CR>
 let NERDTreeShowHidden=1
-colorscheme darkblue
 
-"set smartindent
 set incsearch
 set tabstop=4
 set shiftwidth=4
 set expandtab
-map <F3> :tabp<CR>
-map <F4> :tabn<CR>
-map <F5> :tabe % <CR>
-" Enable use of the mouse for all modes
-" set mouse=a
-"
+let g:ycm_server_python_interpreter = '/usr/bin/python'
 
+
+execute pathogen#infect()
+call pathogen#helptags()
