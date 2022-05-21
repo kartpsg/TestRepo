@@ -15,3 +15,5 @@ git push origin master
 git merge orgin/master
 //Make changes & commit in local master.
 git push origin master
+----------------
+----------------
